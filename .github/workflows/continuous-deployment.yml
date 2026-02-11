@@ -24,7 +24,7 @@ jobs:
         distribution: 'adopt'
         cache: maven
 
-     - name: Build Application .jar
+    - name: Build Application .jar
       working-directory: ./28_/rest-with-spring-boot-and-java-erudio
       run: mvn clean package
 
@@ -37,6 +37,4 @@ jobs:
         docker tag 'jcfalves'/rest-with-spring-boot-erudio:latest 'jcfalves'/rest-with-spring-boot-erudio:${{ github.run_id }}
         
         docker push 'jcfalves'/rest-with-spring-boot-erudio:latest
-        docker push 'jcfalves'/rest-with-spring-boot-erudio:${{ github.run_id }}
-
-        
+        docker push 'jcfalves'/rest-with-spring-boot-erudio:${{ github.run_id }}          
