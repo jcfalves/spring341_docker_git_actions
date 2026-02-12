@@ -24,7 +24,7 @@ jobs:
         distribution: 'adopt'
         cache: maven
 
-     - name: Build Application .jar
+    - name: Build Application .jar
       working-directory: ./28_/rest-with-spring-boot-and-java-erudio
       run: mvn clean package
 
